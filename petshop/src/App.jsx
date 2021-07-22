@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './assets/css/base/base.css'
 import Home from './paginas/Home'
 import Sobre from './paginas/Sobre'
+import Pagina404 from './paginas/Pagina404'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/sobre'>
+        <Route path='/sobre'>
           <Sobre />
         </Route>
       </Switch>
