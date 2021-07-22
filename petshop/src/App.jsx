@@ -17,6 +17,9 @@ function App() {
         <Route path='/sobre'>
           <Sobre />
         </Route>
+        <Route>
+          <Pagina404/> {/*essa é a rota padrão, se não for para nenhum dos enderecos acima, entao vem pra essa rota*/}
+        </Route>
       </Switch>
     </Router>
   )
