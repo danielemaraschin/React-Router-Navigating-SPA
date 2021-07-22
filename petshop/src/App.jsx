@@ -8,10 +8,10 @@ function App() {
 
   return (
     <Router>
-      <Route>
+      <Route exact path='/'>
         <Home />
       </Route>
-      <Route>
+      <Route exact path='/sobre'>
         <Sobre />
       </Route>
     </Router>
