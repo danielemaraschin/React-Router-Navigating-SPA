@@ -18,7 +18,7 @@ const Cabecalho = () => {
                 <ul className="menu-itens">
                     <li><Link to="#" className="menu-item menu-item--entrar" >Entrar</Link></li>
                     <li><Link to="#"  className="menu-item"> Produtos</Link></li>
-                    <li><Link href="#"  className="menu-item"> Blog</Link></li>
+                    <li><Link to="#"  className="menu-item"> Blog</Link></li>
                     <li>< Link to="/sobre"  className="menu-item"> Sobre</Link></li>
                 </ul>
             </nav>
