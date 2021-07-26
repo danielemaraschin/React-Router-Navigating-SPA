@@ -12,7 +12,7 @@ const ListaPost = ({url}) => {
     
     
     return(
-        <section>
+        <section className="posts container">
             {
                 post.map((post) => (
                     <Link className={`cartao-post cartao-post--${post.categoria}`}>
