@@ -21,7 +21,7 @@ function App() {
           <Sobre />
         </Route>
         <Route path='/posts/:id'> {/*id estamos usando o usar hook params */}
-          <Sobre />
+          <Post/>
         </Route>
         <Route>
           <Pagina404/> {/*essa é a rota padrão, se não for para nenhum dos enderecos acima, entao vem pra essa rota*/}

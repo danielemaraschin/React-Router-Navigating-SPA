@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { busca } from "../assets/api/api";
-import { useParams  } from "react-router";
+import { useParams, useHistory  } from "react-router";
 import '../assets/css/post.css'
 
 const Post = () => {
-    const { id } = useParams()
+    let history = useHistory()
+    const { id } = useParams() //hook useParams para colocar o id como parametro na rota
     const [post, setPost] = useState({}) /*post sao objetos entao inicia com obj vazio */
-    useEffect(() => {busca(`/posts/${id}`, setPost)},[id])
+
+    useEffect(() => {busca(`/posts/${id}`, setPost).catch(()=> {
+        history.push('/404') //se bater em id desconhecido vai para a rota 404
+    })
+
+},[id])
         /* vamos usar o useEffect aqui pq temos que buscar os posts que estao em outra pag, usaremos um get para pegar o id do post requisitado */ 
     /*altera o componente sempre que alterar o id */
 
