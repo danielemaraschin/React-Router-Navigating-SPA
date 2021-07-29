@@ -5,6 +5,7 @@ import Home from './paginas/Home'
 import Sobre from './paginas/Sobre'
 import Pagina404 from './paginas/Pagina404'
 import Cabecalho from './components/Cabecalho'
+import Post from './paginas/Post'
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
           <Home />
         </Route>
         <Route path='/sobre'>
+          <Sobre />
+        </Route>
+        <Route path='/posts/:id'> {/*id precisa usar hook */}
           <Sobre />
         </Route>
         <Route>

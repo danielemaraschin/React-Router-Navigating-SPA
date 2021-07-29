@@ -4,17 +4,17 @@ import {busca} from '../assets/api/api'
 
 const ListaPost = ({url}) => {
 
-    const [post, setPosts] = useState([])
+    const [posts, setPosts] = useState([])
 
     useEffect(() =>{
         busca(url,setPosts)
-    }, [])
+    }, [url]) //so irá atualizar o estado da app se atualizar a url 
     
     
     return(
         <section className="posts container">
             {
-                post.map((post) => (
+                posts.map((post) => (
                     <Link className={`cartao-post cartao-post--${post.categoria}`} to={`/posts/${post.id}`}>
                         <article key={post.id}>
                             <h3 className="cartao-post__titulo">{post.title}</h3>
