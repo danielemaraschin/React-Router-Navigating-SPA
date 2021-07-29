@@ -20,7 +20,7 @@ function App() {
         <Route path='/sobre'>
           <Sobre />
         </Route>
-        <Route path='/posts/:id'> {/*id precisa usar hook */}
+        <Route path='/posts/:id'> {/*id estamos usando o usar hook params */}
           <Sobre />
         </Route>
         <Route>
