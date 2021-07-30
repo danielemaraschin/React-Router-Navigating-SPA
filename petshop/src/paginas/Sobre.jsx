@@ -8,11 +8,11 @@ const Sobre = () => {
   return (
     <main>
       <div className="container">
-        <h2 className="titulo-pagina">Sobre Doguito</h2>
+        <h2 className="titulo-pagina">About Doguito</h2>
       </div>
       <section className="container flex flex--centro">
         <article className="cartao">
-          O blog do doguito foi criado para tirar diversas dúvidas sobre o mundo pet!!!
+        Doguito's blog was created to answer several questions about the pet world!!!
         </article>
         
       </section>
