@@ -10,7 +10,7 @@ const Home = () => {
         <h2 className="titulo-pagina">Pet News</h2>
       </div>
       <ListaCategorias/>
-      <ListaPost url={'/posts'}/>
+      <ListaPost url={'/posts'}/>{/*ele que é responsavel por listar os posts e dentro dele ja tem td logica para exibir os posts. mas aqui ele ta pegando todos os posts*/}
     </main>
   )
 }
