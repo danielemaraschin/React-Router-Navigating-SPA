@@ -7,7 +7,7 @@ import ListaPost from '../components/ListaPost'
 const Categoria = () => {
     const { id } = useParams()
     const {path} = useRouteMatch ()
-
+    const  [subcategorias, setSubcategorias]= useState([])
     return(
         <>
         <div className="container">
