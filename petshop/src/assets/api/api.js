@@ -7,3 +7,5 @@ export const busca = async (url, setDado) => {
     const resposta = await api.get(url)
     setDado(resposta.data)
 }
+
+export default busca

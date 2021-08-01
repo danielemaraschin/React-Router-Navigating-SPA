@@ -3,16 +3,16 @@ import { Route, useParams, useRouteMatch } from 'react-router-dom'
 import '../assets/css/blog.css'
 import ListaCategorias from '../components/ListaCategorias'
 import ListaPost from '../components/ListaPost'
-import busca from '../assets/api/api'
+import {busca} from '../assets/api/api'
 
 const Categoria = () => {
     const { id } = useParams()
     const {path} = useRouteMatch ()
     const  [subcategorias, setSubcategorias]= useState([])
-    
-    useEffect(() => {
+    //efeito colateral de atualizacao de componentes de api
+    useEffect(() => {       //poderiamos colcoar o setSubcategorias, mas vamos colocar uma funcao anonima q recebe como parametro categoria e então executa setSubcategoria
         busca(`/categorias/${id}`, (categoria) => {
-            setSubcategorias(categorias.subcategorias)
+            setSubcategorias(categoria.subcategorias)
         } )}, [id])
 
     return(
