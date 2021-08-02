@@ -36,12 +36,13 @@ const Categoria = () => {
                     ))
                 }
             </ul>
-            <Route>
-                <SubCategoria></SubCategoria>
-            </Route>
             <Route exact path={`${path}/`}> {/*vai mostrar em qual caminho esta, wellness ou comportamento, conforme clicamos em cima */}
                 <ListaPost url={`/posts?categoria=${id}`} /> {/*queremos o post especifico*/}
             </Route>
+            <Route path={`${path}/:subcategoria`}> {/*subcategoria dinamica pq o useParams quem vai determinar qual subcategoria que é*/}
+                <SubCategoria/> {/*path é o que está sendo usado ate categorias*/}
+            </Route>
+
         </>
     )
 }
