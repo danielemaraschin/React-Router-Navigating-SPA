@@ -19,16 +19,16 @@
     --fonte-tamanho-menu-cabecalho-item: 1.2rem;
     --fonte-tamanho-naoencontrado-texto: 1.25rem;
 
-    --cor-primaria: #0071ea;
-    --cor-secundaria: #d6eaff;
+    --cor-primaria: #773cff;
+    --cor-secundaria: #dfadf7;
     --cor-contraste-escuro: #4D4D4D;
     --cor-contraste-claro: #fff;
     --cor-divisao: #dadada;
     --cor-aviso: #df2525;
     --cor-sucesso: #46bb42;
 
-    --cor-categoria-bem-estar: #ff4949;
-    --cor-categoria-comportamento: #368dff;
+    --cor-categoria-bem-estar: #ff49ad;
+    --cor-categoria-comportamento: #a536ff;
 
     --sombra: 0 5px 10px #55a6ff38;
 }
