@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, useParams, useRouteMatch, Link } from 'react-router-dom'
+import { Route, useParams, useRouteMatch, Link, Switch } from 'react-router-dom'
 import '../assets/css/blog.css'
 import ListaCategorias from '../components/ListaCategorias'
 import ListaPost from '../components/ListaPost'
@@ -8,7 +8,7 @@ import SubCategoria from './Subcategoria'
 
 const Categoria = () => {
     const { id } = useParams()
-    const { url,  path } = useRouteMatch()
+    const { url, path } = useRouteMatch()
     console.log(url)
     const [subcategorias, setSubcategorias] = useState([])
     //efeito colateral de atualizacao de componentes de api
@@ -36,12 +36,15 @@ const Categoria = () => {
                     ))
                 }
             </ul>
-            <Route exact path={`${path}/`}> {/*vai mostrar em qual caminho esta, wellness ou comportamento, conforme clicamos em cima */}
-                <ListaPost url={`/posts?categoria=${id}`} /> {/*queremos o post especifico*/}
-            </Route>
-            <Route path={`${path}/:subcategoria`}> {/*subcategoria dinamica pq o useParams quem vai determinar qual subcategoria que é*/}
-                <SubCategoria/> {/*path é o que está sendo usado ate categorias*/}
-            </Route>
+            <Switch> {/*usar switch pq quando encontrar a rota descrita, vai parar de procurar outras com o mesmo nome*/}
+                <Route exact path={`${path}/`}> {/*vai mostrar em qual caminho esta, wellness ou comportamento, conforme clicamos em cima */}
+                    <ListaPost url={`/posts?categoria=${id}`} /> {/*queremos o post especifico*/}
+                </Route>
+                <Route path={`${path}/:subcategoria`}> {/*subcategoria dinamica pq o useParams quem vai determinar qual subcategoria que é*/}
+                    <SubCategoria /> {/*path é o que está sendo usado ate categorias*/}
+                </Route>
+            </Switch>
+
 
         </>
     )
