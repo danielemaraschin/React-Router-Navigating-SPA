@@ -3,6 +3,7 @@ import { busca } from "../assets/api/api";
 import { useParams, useHistory  } from "react-router";
 import '../assets/css/post.css'
 
+
 const Post = () => {
     let history = useHistory()
     const { id } = useParams() //hook useParams para colocar o id como parametro na rota
