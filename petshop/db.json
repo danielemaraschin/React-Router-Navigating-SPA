@@ -3,12 +3,12 @@
     {
       "id": "bem-estar",
       "nome": "Wellness",
-      "subcategorias": ["higiene", "saude"]
+      "subcategorias": ["Hygiene", "Health"]
     },
     {
       "id": "comportamento",
       "nome": "Behavior",
-      "subcategorias": ["treinamento", "educacao"]
+      "subcategorias": ["Cats", "Dogs"]
     }
   ],
   "posts": [
@@ -18,7 +18,7 @@
       "metadescription":"Use the right tools to wash your dog",
       "body": "Most dogs prefer to skip bath time, but bathing plays an important role in your dog's coat and skin health, helping to keep it clean and free of dirt and parasites. Having the right products can help. you feel more comfortable.",
       "categoria": "bem-estar",
-      "subcategoria": "higiene"
+      "subcategoria": "hgiene"
     },
     {
       "id": 2,
@@ -26,7 +26,7 @@
       "metadescription": "The toilet your dog deserves.",
       "body": "Training a puppy to use potty pads can be a great step to full housebreaking, or can be a full-time fix for small dogs.",
       "categoria": "bem-estar",
-      "subcategoria": "higiene"
+      "subcategoria": "Hygiene"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "metadescription": "Fleas and ticks: the most feared in the summer months from the pet owners.",
       "body": "Particularly if your dog spends a lot of time outdoors, it's important to ensure that they're protected from fleas and ticks (and the various diseases they carry). But flea and tick prevention products aren’t just important for your dog’s comfort and health—they can also prevent you and your family from getting Lyme disease or another tick-borne illness.",
       "categoria": "bem-estar",
-      "subcategoria": "saude"
+      "subcategoria": "Health"
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "metadescription": "The change in routine due to the COVID-19 pandemic may be the biggest factor.",
       "body": "They count on getting extra attention including all those new puppies that keep us around, but with more people returning to the office or going on vacation, dogs will feel the absence more than ever, creating a pandemic of anxiety among our people. dogs, for which we cannot be prepared.",
       "categoria": "comportamento",
-      "subcategoria": "educacao"
+      "subcategoria": "Dogs"
     },
     {
       "id": 5,
@@ -50,7 +50,7 @@
       "metadescription": "Socialization is a big factor in this learning",
       "body": "Teaching a dog to stop being afraid can only be done by increasing his self-confidence. This means changing the way your mind reacts in certain situations and negative associations into positive ones. Doing this requires a lot of patience and a series of determined controls on the dreaded event or object, but at a distance enough for the dog not to feel anxious.",
       "categoria": "comportamento",
-      "subcategoria": "educacao"
+      "subcategoria": "Dogs"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "metadescription": "Puur is a warning noise ",
       "body": "Scientists assume that a cat's purr is an expression of pleasure or is a means of communication with its young, perhaps the reasons for purring can be deciphered from the more stressful moments in a cat's life. Cats often purr while under duress, such as during a visit to the veterinarian or when recovering from injury. Thus, not all purring cats appear to be content or pleased with their current circumstances. This riddle has lead researchers to investigate how cats purr, which is also still under debate.",
       "categoria": "comportamento",
-      "subcategoria": "treinamento"
+      "subcategoria": "Cats"
     },
     {
       "id": 7,
@@ -66,7 +66,7 @@
       "metadescription": "Yes, you can!And it's easier than you can imagine.",
       "body":"Typically used as training tools for a wide variety of animals, a clicker will only cost a few dollars and will help you give positive reinforcement when learning to train a cat. (You can also use a regular pen with a click button - the important thing is to have a distinct noise that you can make instantly.) Most cat training involves giving your cat a treat he likes after a click to mark the desired behavior.",
       "categoria": "comportamento",
-      "subcategoria": "treinamento"
+      "subcategoria": "Cats"
     }
   ]
 }
