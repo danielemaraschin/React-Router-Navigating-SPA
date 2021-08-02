@@ -4,6 +4,7 @@ import '../assets/css/blog.css'
 import ListaCategorias from '../components/ListaCategorias'
 import ListaPost from '../components/ListaPost'
 import { busca } from '../assets/api/api'
+import SubCategoria from './Subcategoria'
 
 const Categoria = () => {
     const { id } = useParams()
@@ -33,9 +34,11 @@ const Categoria = () => {
 
                         </li>
                     ))
-
                 }
             </ul>
+            <Route>
+                <SubCategoria></SubCategoria>
+            </Route>
             <Route exact path={`${path}/`}> {/*vai mostrar em qual caminho esta, wellness ou comportamento, conforme clicamos em cima */}
                 <ListaPost url={`/posts?categoria=${id}`} /> {/*queremos o post especifico*/}
             </Route>
